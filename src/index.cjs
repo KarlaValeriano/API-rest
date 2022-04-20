@@ -17,7 +17,13 @@ app.use(bodyParser.json())
 
  const user = require('./models/usuario-model')
  const novouser = new user("Karla","karla@gmail.com","12345678")
- console.log(novouser);
+ 
+
+ const Tarefas  = require('./models/tarefa-model')
+ const novatarefa = new Tarefas("1" ,"2","disponivel","13/10/2020")
+ console.log(novatarefa);
+
+
 
  app.listen(8010,() =>
  console.log('rodando servidor na porta 8000')
